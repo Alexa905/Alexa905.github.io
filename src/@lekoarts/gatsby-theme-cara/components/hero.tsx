@@ -64,7 +64,7 @@ const Hero = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     }} src={'/mom.png'} alt="Clowness"/>
                     <img sx={{opacity: `0.9`, left: `132px`, width: `16%`, top: `-83px`, position: `absolute`}}
                          src={'/tolik.png'} alt="Acrobat"/>
-                    <img sx={{opacity: `0.9`, left: `0`, right:`0`, width: `14%`, top: `34px`, margin:`auto`,position: `absolute`}}
+                    <img sx={{opacity: `0.9`, left: `0`, right:`0`, width: `14%`, top: `134px`, margin:`auto`,position: `absolute`}}
                          src={'/dolls.png'} alt="Dolls"/>
                 </div>
             </Inner>
