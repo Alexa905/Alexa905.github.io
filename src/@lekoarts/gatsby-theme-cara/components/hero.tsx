@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import {jsx} from "theme-ui";
-import Icon from "./../../../../static/logo-slogan.svg";
+import Icon from "./../../../../static/logo-big.svg";
 import Divider from "../elements/divider";
 import Inner from "../elements/inner";
 import Content from "../elements/content";
@@ -14,15 +14,11 @@ const Hero = ({offset, factor = 1}: { offset: number; factor?: number }) => (
         <Divider speed={0.2} offset={offset} factor={factor}>
             <UpDown>
                 <SVG icon="balloon" hiddenMobile width={48} stroke color="icon_orange" left="10%" top="20%"/>
-                {/*  <SVG icon="balloon" hiddenMobile width={24} stroke color="icon_yellow" left="60%" top="70%"/>*/}
-                {/*  <SVG icon="hexa" width={48} stroke color="icon_red" left="60%" top="70%" />*/}
                 <SVG icon="party" width={48} stroke color="icon_red" left="80%" top="70%"/>
                 <SVG icon="cake" width={6} color="icon_darker" left="60%" top="15%"/>
             </UpDown>
             <UpDownWide>
-                {/*<SVG icon="arrowUp" hiddenMobile width={16} color="icon_blue" left="80%" top="10%"/>*/}
                 <SVG icon="balloonSmall" width={16} color="icon_blue" left="80%" top="10%"/>
-                {/*<SVG icon="triangle" width={12} stroke color="icon_brightest" left="90%" top="50%"/>*/}
                 <SVG icon="cake" width={12} color="icon_orange" left="90%" top="50%"/>
                 <SVG icon="bitbaloon" width={16} color="icon_darker" left="70%" top="90%"/>
                 <SVG icon="balloon" width={16} stroke color="icon_darkest" left="30%" top="65%"/>
@@ -54,7 +50,7 @@ const Hero = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     {/*     <pre sx={{position: `absolute`, top: `104px`, left: `38%`, fontSize: `30px`}}>Добро пожаловать в</pre>
                      <pre sx={{position: `absolute`, top: `144px`, left: `38%`, fontSize: `30px`}}>клуб любителей цирка</pre>
                      <img sx={{position: `absolute`, width: `85px`, top: `219px`, left: `46%`}} src={'/logo-gold.png'} alt="Intro"/>;*/}
-                    <Icon sx={{position: `absolute`, width: `274px`, top: `95px`, left: `0`, right:`0`, margin:`auto`}}/>
+                    <Icon sx={{position: `absolute`, width: `390px`, top: `23px`, left: `0`, right:`0`, margin:`auto`}}/>
                 </div>
                 <Intro/>
 
@@ -68,7 +64,7 @@ const Hero = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     }} src={'/mom.png'} alt="Clowness"/>
                     <img sx={{opacity: `0.9`, left: `132px`, width: `16%`, top: `-83px`, position: `absolute`}}
                          src={'/tolik.png'} alt="Acrobat"/>
-                    <img sx={{opacity: `0.9`, left: `auto`, right:`266px`, width: `14%`, top: `332px`, position: `absolute`}}
+                    <img sx={{opacity: `0.9`, left: `0`, right:`0`, width: `14%`, top: `34px`, margin:`auto`,position: `absolute`}}
                          src={'/dolls.png'} alt="Dolls"/>
                 </div>
             </Inner>
