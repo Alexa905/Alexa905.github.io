@@ -22,6 +22,7 @@ const theme = merge(tailwind, {
     icon_pink: tailwind.colors.pink[5],
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
+    icon_bordo: `#a02820`,
     modes: {
       light: {
         text: tailwind.colors.gray[8],
@@ -43,8 +44,8 @@ const theme = merge(tailwind, {
     position: `absolute`,
     bottom: 0,
     color: `textMuted`,
-    px: [2, 3],
-    py: [3, 4],
+    px: [2, 2, 3],
+    py: [3, 2, 4],
   },
   styles: {
     root: {
@@ -98,12 +99,12 @@ const theme = merge(tailwind, {
       color: `heading`,
     },
     h3: {
-      fontSize: [3, 4, 5],
+      fontSize: [1, 3, 4, 5],
       mt: 3,
       color: `heading`,
     },
     h4: {
-      fontSize: [2, 3, 4],
+      fontSize: [1, 2, 3, 4],
       color: `heading`,
     },
     h5: {

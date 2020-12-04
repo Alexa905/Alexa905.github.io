@@ -1,6 +1,6 @@
-import { merge } from "theme-ui"
-import { tailwind } from "@theme-ui/presets"
-import originalTheme from "@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui/index"
+import { merge } from 'theme-ui';
+import { tailwind } from '@theme-ui/presets';
+import originalTheme from '@lekoarts/gatsby-theme-cara/src/gatsby-plugin-theme-ui/index';
 
 const theme = merge(originalTheme, {
 	initialColorModeName: 'light',
@@ -25,6 +25,19 @@ const theme = merge(originalTheme, {
 				muted: tailwind.colors.gray[3],
 			}
 		}
+
+	},
+	breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
+	styles: {
+		h3: {
+			fontSize: [1, 2, 3, 4, 5],
+			mt: 3,
+			color: `heading`,
+		},
+		h4: {
+			fontSize: [1, 2, 2, 3, 4],
+			color: `heading`,
+		},
 	}
 })
 

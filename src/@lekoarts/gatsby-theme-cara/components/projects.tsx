@@ -9,27 +9,72 @@ import {UpDown, UpDownWide} from "../styles/animations";
 // @ts-ignore
 import ProjectsMDX from "../sections/projects";
 
-const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => (
-    <div>
+const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => {
+    return <div id="projects">
         <Divider
-            bgs="linear-gradient(to right, SlateBiege 0%, DeepSkyBlue 100%)"
-            bg="white"
+            bg="linear-gradient(to right, #edf2f7 0%, #edf2f7 100%)"
+            bgs="white"
             sx={{clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)`}}
-            speed={0}
+            speed={0.2}
             offset={1.1}
             factor={factor}
         />
-        <Content speed={0.4} offset={offset + 0.2} factor={factor}>
-            <Inner>
+        <Content speed={0} offset={offset + 0.2} factor={factor}>
+            <Inner sx={{position: `relative`}}>
                 <div
                     sx={{
                         display: `grid`,
                         gridGap: [4, 4, 4, 5, 4],
-                        gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
+                        gridTemplateColumns: [`1fr`, `1fr`,`1fr`, `repeat(2, 1fr)`],
                         h2: {gridColumn: `-1/1`, fontFamily: 'Pacifico'},
                     }}
                 >
                     <ProjectsMDX />
+
+                    <ProjectCard
+                        sx={{position: `relative`}}
+                        title="ЖОНГЛИРОВАНИЕ"
+                        imgsrc="./juggling.png"
+                        bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+                    >
+                        <ul>
+                            <li>МЯЧАМИ</li>
+                            <li>БУЛАВАМИ</li>
+                            <li>КОЛЬЦАМИ</li>
+                        </ul>
+
+                    </ProjectCard>
+                    <ProjectCard
+                        title="АКРОБАТИКА"
+                        imgsrc="./juggling.png"
+                        bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+                    >
+                        <ul>
+                            <li>РАЗВИТИЕ ГИБКОСТИ</li>
+                            <li>СИЛЫ</li>
+                            <li>КООРДИНАЦИИ</li>
+                        </ul>
+                    </ProjectCard>
+                    <ProjectCard
+                        title="ЭКВИЛИБРИСТИКА"
+                        bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+                    >
+                        <ul>
+                            <li>ЭКВИЛИБР НА МОНОЦИКЛЕ</li>
+                            <li>ЭКВИЛИБР НА КАТУШКАХ</li>
+                        </ul>
+                    </ProjectCard>
+                    <ProjectCard
+                        title="И  МНОГО  ВСЕГО"
+                        bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+                    >
+                        <ul>
+                            <li>
+                                УДИВИТЕЛЬНОГО!
+                            </li>
+                        </ul>
+                    </ProjectCard>
+
                 </div>
                 <div sx={{
                     marginTop: `30px`,
@@ -43,14 +88,7 @@ const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => 
                     <div sx={{
                         position: `relative`
                     }}>
-                        <img sx={{
-                            position: `absolute`,
-                            width: `11%`,
-                            margin: `auto`,
-                            bottom: `-459px`,
-                            left: `0`,
-                            right: `0`,
-                        }} src={`././juggling.png`}/>
+
 
                     </div>
                 </div>
@@ -79,6 +117,7 @@ const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => 
             <SVG icon="circus" width={8} stroke color="icon_yellow" left="80%" top="70%"/>
         </Divider>
     </div>
-)
+
+}
 
 export default Projects

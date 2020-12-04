@@ -23,9 +23,10 @@ const ProjectCard = ({link, title, children, bg, imgsrc}: ProjectCardProps) => (
             display:`block`,
             textDecoration: `none`,
             borderRadius: `lg`,
-            px: 4,
-            py: [4, 5],
+            px: [1, 1, 2,4],
+            py: [1, 1 ,2,4, 5],
             color: `white`,
+            position: `relative`,
             background: bg || `none`,
             transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
             "&:hover": {
@@ -40,10 +41,10 @@ const ProjectCard = ({link, title, children, bg, imgsrc}: ProjectCardProps) => (
         <div
             sx={{
                 textTransform: `uppercase`,
-                letterSpacing: `wide`,
-                pt: 4,
-                fontSize: [4, 5],
-                fontWeight: `medium`,
+                letterSpacing: [0, 0, `wide`],
+                pt: [3, 3, 3,4],
+                fontSize: [2, 2, 3,4, 5],
+                fontWeight: [`small`,`small`,`medium`],
                 lineHeight: 1.1,
             }}
         >
