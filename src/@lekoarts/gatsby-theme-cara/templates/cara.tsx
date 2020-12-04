@@ -40,7 +40,7 @@ function useWindowWidth() {
         pages: 5,
         projectsOffset: 1.6,
         projectsFactor: 1,
-        aboutOffset: 3.2,
+        aboutOffset: 3.3,
         aboutFactor: 1,
         contactOffset: 4,
         contactFactor: 1,
@@ -97,6 +97,7 @@ function useWindowWidth() {
                 //using the default
                 break;
             case (width <= 1200):
+                breakpoints.aboutOffset = 3.2;
                 //using the default
                 break;
             case (width > 1600):

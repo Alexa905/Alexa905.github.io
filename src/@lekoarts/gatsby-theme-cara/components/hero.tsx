@@ -46,7 +46,7 @@ const Hero = ({offset, factor = 1}: { offset: number; factor?: number }) => {
                  offset={offset} factor={factor}>
             <Inner sx={{textAlign: `center`, h2: {fontFamily: 'Pacifico'}}}>
 
-                <div sx={{minHeight: [`100px`, `350px`, `600px`, `600px`], marginBottom: [`0`, `0`, `0px`]}}>
+                <div sx={{minHeight: [`120px`, `350px`, `600px`, `600px`], marginBottom: [`0`, `0`, `0px`]}}>
                     <img sx={{
                         opacity: `0.8`,
                         width: `600px`,
