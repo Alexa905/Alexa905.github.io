@@ -21,7 +21,6 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
     siteDescription: defaultDescription,
     siteLanguage,
     siteImage: defaultImage,
-    author,
   } = site
 
   const seo = {
@@ -33,6 +32,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
   return (
     <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
       <html lang={siteLanguage} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
@@ -48,11 +48,10 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:image:alt" content={seo.description} />
-      <meta name="twitter:creator" content={author} />
-      <meta name="gatsby-theme" content="@lekoarts/gatsby-theme-cara" />
       <link rel="icon" type="image/png" sizes="32x32" href={withPrefix(`/favicon-32x32.png`)} />
       <link rel="icon" type="image/png" sizes="16x16" href={withPrefix(`/favicon-16x16.png`)} />
       <link rel="apple-touch-icon" sizes="180x180" href={withPrefix(`/apple-touch-icon.png`)} />
+        <link rel="canonical" href="https://www.circusclub.ru" />
       {children}
     </Helmet>
   )

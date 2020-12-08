@@ -12,7 +12,7 @@ module.exports = {
 		siteTitleAlt: `Клуб любителей цирка в городе Орле`,
 		siteTitle: `Клуб любителей цирка`,
 		siteHeadline: `Клуб любителей цирка в городе Орле`,
-		siteUrl: `http://circusclub.ru`,
+		siteUrl: `https://circusclub.ru`,
 		siteDescription: `Клуб любителей цирка в городе Орле приглашает детей и взрослых провести досуг`,
 		siteLanguage: `ru`,
 		siteImage: `/logo.png`,
