@@ -43,7 +43,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
         p: { margin: `0`, position: `relative`},
       }}>
         <ContactMDX />
-        <img id="contacts" sx={{opacity: `0.9`, left: [`5%`, `10%`,`12%`], width: `18%`, top: [0, 0 ,`-22px`,`-22px`, `-100px`], position: `absolute`}}
+        <img id="contacts" sx={{opacity: `0.9`, left: [`5%`, `10%`,`12%`], width: `18%`, top: [0, 0 ,`-22px`,`-22px`, `-50px`], position: `absolute`}}
              src={'/balloon.png'} alt="balloon"/>
       </Inner>
       <Footer />

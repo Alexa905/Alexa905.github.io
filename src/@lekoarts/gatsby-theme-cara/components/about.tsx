@@ -41,6 +41,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
             <Inner sx={{
                 h2: {fontFamily: 'Pacifico', marginBottom: [0,0,0,`40px`]},
                 h5: {textAlign:`center`},
+                h4: {textAlign:`center`},
                 dl: {textAlign:`center`},
                 h3: {textAlign: `center`, fontFamily:'Lobster', fontSize:`30px`},
                 dd: {fontSize: [`14px`,`14px`, `14px`, `16px`, `16px`], margin:`0 0 15px 0`},
@@ -58,7 +59,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     alignItems:`center`,
                     alignContent:`center`,
                     boxShadow: [`0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`],
-                    marginBottom:[`10px`,`10px`,`10px`,`10px`,`100px`]
+                    marginBottom:[`10px`,`10px`,`10px`,`10px`,`80px`]
                 }}>
                     <img sx={{
                         opacity: `0.9`,
@@ -71,9 +72,9 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     }}>
 
                         <h3>Страшкин Анатолий Павлович </h3>
-                        <h5>Артист цирка (зквилибрист)<br/>
+                        <h4>Артист цирка (зквилибрист)<br/>
                             Кандидат в Мастера Спорта по <br/> спортивной гимнастике
-                        </h5>
+                        </h4>
                         <dl>
                             <dt>с 1979 г.</dt>
                             <dd>тренер по спортивной гимнастике <br/>в ДЮСШ Горспорткомитета г. Сумгаита</dd>
@@ -118,9 +119,9 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     }}>
 
                         <h3>Алексеенкова Марина Николаевна</h3>
-                        <h5> Артистка цирка<br/>
+                        <h4> Артистка цирка<br/>
                             Режиссер театра (диплом Белорусской Академии <br/> Искусств,
-                            театральный факультет)</h5>
+                            театральный факультет)</h4>
                         <dl sx={{}}>
                             <dt>с 1986 г.</dt>
                             <dd>режиссер Театра юного зрителя ДКТЖ <br/>г.Гомель, РБ</dd>

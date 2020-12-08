@@ -37,13 +37,13 @@ function useWindowWidth() {
     const [width, setWidth] = useState(window.innerWidth);
 
     let breakpoints = {
-        pages: 6,
+        pages: 6.2,
         projectsOffset: 1.4,
         projectsFactor: 1,
-        aboutOffset: 3.3,
+        aboutOffset: 3.5,
         aboutFactor: 1.5,
-        contactOffset: 5,
-        contactFactor: 1,
+        contactOffset: 5.2,
+        contactFactor: 1.05,
         width: width
     };
 
