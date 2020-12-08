@@ -18,33 +18,33 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
          factor={factor}
          />*/}
 
-        <Divider speed={0.2} offset={offset} factor={factor}>
+        <Divider speed={0.1} offset={offset} factor={factor}>
             <UpDown>
-                <SVG icon="circus" hiddenMobile width={6} color="icon_blue" left="50%" top="75%"/>
-                <SVG icon="party" hiddenMobile width={8} color="icon_darkest" left="70%" top="20%"/>
+                <SVG icon="circus" hiddenMobile width={6} color="icon_blue" left="50%" top="0%"/>
+                <SVG icon="party" width={8} color="icon_darkest" left="70%" top="20%"/>
                 <SVG icon="bitbaloon" width={8} stroke color="icon_darkest" left="25%" top="5%"/>
-                <SVG icon="balloonSmall" hiddenMobile width={24} color="icon_orange" left="80%" top="80%"/>
+                <SVG icon="balloonSmall" width={24} color="icon_orange" left="80%" top="80%"/>
             </UpDown>
             <UpDownWide>
-                <SVG icon="bitbaloon" hiddenMobile width={16} color="icon_purple" left="5%" top="80%"/>
+                <SVG icon="bitbaloon" width={16} color="icon_purple" left="5%" top="80%"/>
                 <SVG icon="cake" width={12} stroke color="icon_brightest" left="95%" top="50%"/>
-                <SVG icon="bitbaloon" hiddenMobile width={6} color="icon_brightest" left="85%" top="15%"/>
-                <SVG icon="party" hiddenMobile width={8} color="icon_darkest" left="45%" top="10%"/>
+                <SVG icon="bitbaloon" width={6} color="icon_brightest" left="85%" top="15%"/>
+                <SVG icon="party" width={8} color="icon_darkest" left="45%" top="10%"/>
             </UpDownWide>
-            <SVG icon="balloonSmall" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%"/>
+            <SVG icon="circus" width={6} color="icon_brightest" left="4%" top="20%"/>
             <SVG icon="balloonSmall" width={12} color="icon_darkest" left="70%" top="60%"/>
-            <SVG icon="cake" width={6} color="icon_orange" left="10%" top="10%"/>
+            <SVG icon="cake" width={6} color="icon_orange" left="10%" top="-10%"/>
             <SVG icon="balloonSmall" width={12} color="icon_darkest" left="20%" top="30%"/>
             <SVG icon="circus" width={8} stroke color="icon_darkest" left="80%" top="70%"/>
         </Divider>
         <Content speed={0.2} offset={offset} factor={factor}>
             <Inner sx={{
-                h2: {fontFamily: 'Pacifico', marginBottom: [0,0,0,`40px`]},
-                h5: {textAlign:`center`},
-                h4: {textAlign:`center`},
-                dl: {textAlign:`center`},
-                h3: {textAlign: `center`, fontFamily:'Lobster', fontSize:[`30px`, `34px`]},
-                dd: {fontSize: [`14px`,`14px`, `14px`, `16px`, `16px`], margin:`0 0 15px 0`},
+                h2: {fontFamily: 'Pacifico', marginBottom: [0, 0, 0, `40px`]},
+                h5: {textAlign: `center`},
+                h4: {textAlign: `center`},
+                dl: {textAlign: `center`},
+                h3: {textAlign: `center`, fontFamily: 'Lobster', fontSize: [`30px`, `34px`]},
+                dd: {fontSize: [`14px`, `14px`, `14px`, `16px`, `16px`], margin: `0 0 15px 0`},
                 dt: {fontSize: `14px`, fontWeight: `700`},
             }}>
                 <AboutMDX />
@@ -55,11 +55,11 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                     width: `100%`,
                     background: 'rgba(255,255,255,.9)',
                     borderRadius: '20px',
-                    justifyContent:`center`,
-                    alignItems:`center`,
-                    alignContent:`center`,
+                    justifyContent: `center`,
+                    alignItems: `center`,
+                    alignContent: `center`,
                     boxShadow: [`0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`],
-                    marginBottom:[`10px`,`10px`,`10px`,`10px`,`80px`]
+                    marginBottom: [`10px`, `10px`, `10px`, `10px`, `80px`]
                 }}>
                     <img sx={{
                         opacity: `0.9`,
@@ -83,7 +83,8 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                             <dt>с 1987 г.</dt>
                             <dd>тренер по акробатике <br/>Минский ДКиС железнодорожников</dd>
                             <dt>с 1991 г.</dt>
-                            <dd>артист оригинального жанра эстрадно-циркового <br/>коллектива "Беларусь" (Минскконцерт)</dd>
+                            <dd>артист оригинального жанра эстрадно-циркового <br/>коллектива "Беларусь" (Минскконцерт)
+                            </dd>
                             <dt>с 2002 г.</dt>
                             <dd>артист оригинальнго жанра циркового коллектива <br/>Гомельская областная филармония
                             </dd>
@@ -112,7 +113,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                         transform: `rotate(0deg)`
                     }} src={'/mom.png'} alt="Clowness"/>
                     <div sx={{
-                        position: `relative`, left: [0,0,0,`-120px`,`-150px`],
+                        position: `relative`, left: [0, 0, 0, `-120px`, `-150px`],
                         padding: '20px 0',
                         borderRadius: '0.5rem',
                         margin: `0 auto 20px auto`

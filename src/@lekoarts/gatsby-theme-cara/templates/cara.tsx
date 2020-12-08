@@ -40,7 +40,7 @@ function useWindowWidth() {
         pages: 6.2,
         projectsOffset: 1.4,
         projectsFactor: 1,
-        aboutOffset: 3.5,
+        aboutOffset: 3.4,
         aboutFactor: 1.5,
         contactOffset: 5.2,
         contactFactor: 1.05,
