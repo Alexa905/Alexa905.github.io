@@ -61,7 +61,7 @@ function useWindowWidth() {
         switch (true) {
             case (width <= 400):
 
-                breakpoints.projectsOffset = 1;
+                breakpoints.projectsOffset = 1.2;
                // breakpoints.projectsFactor = 1;
 
             //    breakpoints.aboutOffset = 3.3;
@@ -71,10 +71,10 @@ function useWindowWidth() {
                 break;
             case (width <= 600):
 
-               breakpoints.projectsOffset = 1.1;
+               breakpoints.projectsOffset = 1.2;
              //   breakpoints.projectsFactor = 1;
 
-                breakpoints.aboutOffset = 3.4;
+                breakpoints.aboutOffset = 3.5;
            //     breakpoints.aboutFactor = 1;
 
                 break;

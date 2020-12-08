@@ -19,7 +19,7 @@ const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => 
             offset={1.1}
             factor={factor}
         />
-        <Content speed={0} offset={offset + 0.2} factor={factor}>
+        <Content speed={0.1} offset={offset + 0.2} factor={factor}>
             <Inner sx={{position: `relative`}}>
                 <div
                     sx={{

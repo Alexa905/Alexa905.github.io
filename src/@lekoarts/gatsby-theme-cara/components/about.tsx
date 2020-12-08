@@ -18,7 +18,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
          factor={factor}
          />*/}
 
-        <Divider speed={0} offset={offset} factor={factor}>
+        <Divider speed={0.2} offset={offset} factor={factor}>
             <UpDown>
                 <SVG icon="circus" hiddenMobile width={6} color="icon_blue" left="50%" top="75%"/>
                 <SVG icon="party" hiddenMobile width={8} color="icon_darkest" left="70%" top="20%"/>
@@ -43,7 +43,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                 h5: {textAlign:`center`},
                 h4: {textAlign:`center`},
                 dl: {textAlign:`center`},
-                h3: {textAlign: `center`, fontFamily:'Lobster', fontSize:`30px`},
+                h3: {textAlign: `center`, fontFamily:'Lobster', fontSize:[`30px`, `34px`]},
                 dd: {fontSize: [`14px`,`14px`, `14px`, `16px`, `16px`], margin:`0 0 15px 0`},
                 dt: {fontSize: `14px`, fontWeight: `700`},
             }}>
@@ -112,7 +112,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                         transform: `rotate(0deg)`
                     }} src={'/mom.png'} alt="Clowness"/>
                     <div sx={{
-                        position: `relative`, left: [0,0,0,`-150px`],
+                        position: `relative`, left: [0,0,0,`-120px`,`-150px`],
                         padding: '20px 0',
                         borderRadius: '0.5rem',
                         margin: `0 auto 20px auto`
@@ -134,7 +134,7 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
                             <dt>В 2001 г.</dt>
                             <dd>присвоена 1 категория артистки-чтеца, <br/>мастера художественного слова</dd>
                             <dt>с 2002 г.</dt>
-                            <dd>артистка иллюзионного (оригинального) жанра циркового коллектива <br/> Гомельской
+                            <dd>артистка иллюзионного (оригинального)<br/> жанра циркового коллектива <br/> Гомельской
                                 областной филармонии
                             </dd>
                             <dt>с 2006 г.</dt>
