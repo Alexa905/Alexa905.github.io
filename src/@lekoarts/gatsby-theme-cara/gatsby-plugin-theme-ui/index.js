@@ -92,9 +92,9 @@ const theme = merge(tailwind, {
       color: `heading`,
     },
     h2: {
-      fontSize: [4, 5, 6],
-      mt: 20,
-      mb: 2,
+      fontSize: [4, 4, 5, 5, 6],
+      mt: [0, 0, 0 , 0, 20],
+      mb: [10, 2],
       fontFamily: `Pacifico`,
       color: `heading`,
     },

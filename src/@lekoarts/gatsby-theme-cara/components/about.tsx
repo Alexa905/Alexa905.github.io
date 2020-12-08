@@ -39,92 +39,105 @@ const About = ({offset, factor = 1}: { offset: number; factor?: number }) => (
         </Divider>
         <Content speed={0.2} offset={offset} factor={factor}>
             <Inner sx={{
-                h2: {fontFamily: 'Pacifico'},
-                dd: {fontSize: `14px`},
-                dt: {fontSize: `14px`, fontWeight: `600`},
+                h2: {fontFamily: 'Pacifico', marginBottom: [0,0,0,`40px`]},
+                h5: {textAlign:`center`},
+                dl: {textAlign:`center`},
+                h3: {textAlign: `center`, fontFamily:'Lobster', fontSize:`30px`},
+                dd: {fontSize: [`14px`,`14px`, `14px`, `16px`, `16px`], margin:`0 0 15px 0`},
+                dt: {fontSize: `14px`, fontWeight: `700`},
             }}>
                 <AboutMDX />
                 <div id="about" sx={{
                     position: 'relative',
-                    display: [`block`, `block`, `flex`],
+                    display: [`flex`, `flex`, `flex`],
+                    flexFlow: `row`,
+                    width: `100%`,
+                    background: 'rgba(255,255,255,.9)',
+                    borderRadius: '20px',
+                    justifyContent:`center`,
+                    alignItems:`center`,
+                    alignContent:`center`,
                     boxShadow: [`0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`],
-                    borderRadius: `20px`
+                    marginBottom:[`10px`,`10px`,`10px`,`10px`,`100px`]
                 }}>
+                    <img sx={{
+                        opacity: `0.9`,
+                        display: ['none', 'none', 'none', 'block'],
+                        width: `20%`,
+                    }}
+                         src={'/tolik.png'} alt="Acrobat"/>
                     <div sx={{
-                        background: 'rgba(255,255,255,.9)',
-                        padding: ['20px 0 0 0px', '20px 0 0 0px',  '20px 0 0 0px', '20px 0 0 160px'],
-                        borderRadius: '20px',
-                        margin: [`0 0px 20px 0`, `0 0px 0px 0`, `0 0px 0px 0`,`0 35px 20px 0`]
+                        padding: ['20px 0 0 0px', '20px 0 0 0px', '20px 0 0 0px', '20px 0 50px 0px'],
                     }}>
-                        <img sx={{
-                            opacity: `0.9`,
-                            display: ['none', 'none', 'none', 'block'],
-                            width: `16%`,
-                            top: `5px`,
-                            position: `absolute`,
-                            left: `-28px`,
-                            right: `auto`,
-                            margin: `auto`
-                        }}
-                             src={'/tolik.png'} alt="Acrobat"/>
-                        <h3 sx={{textAlign: `center`}}>Страшкин Анатолий Павлович </h3>
-                        <h4 sx={{textAlign: `center`}}>Артист цирка (зквилибрист)<br/>
+
+                        <h3>Страшкин Анатолий Павлович </h3>
+                        <h5>Артист цирка (зквилибрист)<br/>
                             Кандидат в Мастера Спорта по <br/> спортивной гимнастике
-                        </h4>
+                        </h5>
                         <dl>
                             <dt>с 1979 г.</dt>
-                            <dd>тренер по спортивной гимнастике в ДЮСШ Горспорткомитета г. Сумгаита</dd>
+                            <dd>тренер по спортивной гимнастике <br/>в ДЮСШ Горспорткомитета г. Сумгаита</dd>
                             <dt>с 1985 г.</dt>
                             <dd>артист Минского Госцирка</dd>
                             <dt>с 1987 г.</dt>
-                            <dd>тренер по акробатике ( Минский ДКиС железнодорожников)</dd>
+                            <dd>тренер по акробатике <br/>Минский ДКиС железнодорожников</dd>
                             <dt>с 1991 г.</dt>
-                            <dd>артист оригинального жанра эстрадно-циркового коллектива "Беларусь" (Минскконцерт)</dd>
+                            <dd>артист оригинального жанра эстрадно-циркового <br/>коллектива "Беларусь" (Минскконцерт)</dd>
                             <dt>с 2002 г.</dt>
-                            <dd>артист оригинальнго жанра циркового коллектива <br/>(Гомельская областная филармония)
+                            <dd>артист оригинальнго жанра циркового коллектива <br/>Гомельская областная филармония
                             </dd>
                             <dt>с 2006 г.</dt>
-                            <dd>артист цирка (концертная деятельность, РБ)</dd>
+                            <dd>артист цирка <br/>концертная деятельность, РБ</dd>
                             <dt>с 2016 г.</dt>
                             <dd> артист цирка "Рандеву" (РФ)</dd>
                         </dl>
                     </div>
-
+                </div>
+                <div id="about" sx={{
+                    position: 'relative',
+                    display: [`flex`, `flex`, `flex`],
+                    flexFlow: `column`,
+                    overflow: `hidden`,
+                    background: 'rgba(255,255,255,.9)',
+                    boxShadow: [`0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`, `0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)`],
+                    borderRadius: `20px`
+                }}>
+                    <img sx={{
+                        gridColumn: `-1/1`,
+                        display: ['none', 'none', 'none', 'block'],
+                        opacity: `1`, width: `45%`, position: `absolute`,
+                        right: `20px`,
+                        bottom: [0, 0, 0, `-56px`, `-73px`],
+                        transform: `rotate(0deg)`
+                    }} src={'/mom.png'} alt="Clowness"/>
                     <div sx={{
-                        background: 'rgba(255,255,255,.9)',
+                        position: `relative`, left: [0,0,0,`-150px`],
                         padding: '20px 0',
                         borderRadius: '0.5rem',
-                        margin: `0 0 20px 0`
+                        margin: `0 auto 20px auto`
                     }}>
-                        <img sx={{
-                            gridColumn: `-1/1`,
-                            display: [`none`, `block`],
-                            opacity: `1`, width: `24%`, position: `absolute`,
-                            right: `-19px`,
-                            bottom: [0,0,0,`-22px`, `-27px`],
-                            transform: `rotate(11deg)`
-                        }} src={'/mom.png'} alt="Clowness"/>
-                        <h3 sx={{textAlign: `center`}}>Алексеенкова Марина Николаевна</h3>
-                        <h4 sx={{textAlign: `center`}}> Артистка цирка<br/>
+
+                        <h3>Алексеенкова Марина Николаевна</h3>
+                        <h5> Артистка цирка<br/>
                             Режиссер театра (диплом Белорусской Академии <br/> Искусств,
-                            театральный факультет)</h4>
-                        <dl>
+                            театральный факультет)</h5>
+                        <dl sx={{}}>
                             <dt>с 1986 г.</dt>
-                            <dd>режиссер Театра юного зрителя ДКТЖ (г.Гомель, РБ)</dd>
+                            <dd>режиссер Театра юного зрителя ДКТЖ <br/>г.Гомель, РБ</dd>
                             <dt>с 1995 г.</dt>
-                            <dd>руководитель коллектива "Эстрадный театр" ДКиС Гомельского химзавода</dd>
+                            <dd>руководитель коллектива "Эстрадный театр" <br/>ДКиС Гомельского химзавода</dd>
                             <dt>с 1999 г.</dt>
-                            <dd>артистка театра игр и забав для детей "Вырастайка" (Гомельская областная
-                                филармония)
+                            <dd>артистка театра игр и забав для детей "Вырастайка" <br/>Гомельская областная
+                                филармония
                             </dd>
                             <dt>В 2001 г.</dt>
-                            <dd>присвоена 1 категория артистки-чтеца, мастера художественного слова</dd>
+                            <dd>присвоена 1 категория артистки-чтеца, <br/>мастера художественного слова</dd>
                             <dt>с 2002 г.</dt>
-                            <dd>артистка иллюзионного (оригинального) жанра циркового коллектива Гомельской
+                            <dd>артистка иллюзионного (оригинального) жанра циркового коллектива <br/> Гомельской
                                 областной филармонии
                             </dd>
                             <dt>с 2006 г.</dt>
-                            <dd>артистка цирка <br/> (концертная деятельность, РБ)
+                            <dd>артистка цирка <br/> концертная деятельность, РБ
                             </dd>
                             <dt>с 2016 г.</dt>
                             <dd>артистка цирка "Рандеву" (РФ)

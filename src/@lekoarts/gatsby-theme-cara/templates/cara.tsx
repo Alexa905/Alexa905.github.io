@@ -37,12 +37,12 @@ function useWindowWidth() {
     const [width, setWidth] = useState(window.innerWidth);
 
     let breakpoints = {
-        pages: 5,
-        projectsOffset: 1.6,
+        pages: 6,
+        projectsOffset: 1.4,
         projectsFactor: 1,
         aboutOffset: 3.3,
-        aboutFactor: 1,
-        contactOffset: 4,
+        aboutFactor: 1.5,
+        contactOffset: 5,
         contactFactor: 1,
         width: width
     };
@@ -60,44 +60,36 @@ function useWindowWidth() {
 
         switch (true) {
             case (width <= 400):
-                breakpoints.pages = 5;
 
                 breakpoints.projectsOffset = 1;
-                breakpoints.projectsFactor = 1;
+               // breakpoints.projectsFactor = 1;
 
-                breakpoints.aboutOffset = 2.9;
-                breakpoints.aboutFactor = 1;
+            //    breakpoints.aboutOffset = 3.3;
+              //  breakpoints.aboutFactor = 1.5;
 
-                breakpoints.contactOffset = 4;
-                breakpoints.contactFactor = 1;
+            //    breakpoints.contactFactor = 1;
                 break;
             case (width <= 600):
-                breakpoints.pages = 5;
 
-                breakpoints.projectsOffset = 1.1;
-                breakpoints.projectsFactor = 1;
+               breakpoints.projectsOffset = 1.1;
+             //   breakpoints.projectsFactor = 1;
 
-                breakpoints.aboutOffset = 3;
-                breakpoints.aboutFactor = 1;
+                breakpoints.aboutOffset = 3.4;
+           //     breakpoints.aboutFactor = 1;
 
-                breakpoints.contactOffset = 4;
-                breakpoints.contactFactor = 1;
                 break;
             case (width <= 900):
-                breakpoints.pages = 5;
 
-                breakpoints.projectsOffset = 1.4;
-                breakpoints.projectsFactor = 1;
+                //breakpoints.projectsOffset = 1.4;
+               // breakpoints.projectsFactor = 1;
 
-                breakpoints.aboutOffset = 3;
-                breakpoints.aboutFactor = 1;
+                breakpoints.aboutOffset = 3.5;
+              //  breakpoints.aboutFactor = 1;
 
-                breakpoints.contactOffset = 4;
-                breakpoints.contactFactor = 1;
                 //using the default
                 break;
             case (width <= 1200):
-                breakpoints.aboutOffset = 3.2;
+                breakpoints.aboutOffset = 3.4;
                 //using the default
                 break;
             case (width > 1600):

@@ -36,14 +36,14 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner sx={{
-        position: `relative`, top:[0, `70px`, `70px`, `20px`,`20px`],
+        position: `relative`,
         fontSize:[`12px`,`12px`,`14px` ],
         textAlign: `center`,
         h2: { fontFamily:'Pacifico', left: `0`, position: `relative`},
         p: { margin: `0`, position: `relative`},
       }}>
         <ContactMDX />
-        <img id="contacts" sx={{opacity: `0.9`, left: [`5%`, `10%`,`12%`], width: `18%`, top: [0, 0 ,`-22px`], position: `absolute`}}
+        <img id="contacts" sx={{opacity: `0.9`, left: [`5%`, `10%`,`12%`], width: `18%`, top: [0, 0 ,`-22px`,`-22px`, `-100px`], position: `absolute`}}
              src={'/balloon.png'} alt="balloon"/>
       </Inner>
       <Footer />

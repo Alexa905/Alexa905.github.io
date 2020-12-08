@@ -24,7 +24,7 @@ const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => 
                 <div
                     sx={{
                         display: `grid`,
-                        gridGap: [4, 4, 4, 5, 4],
+                        gridGap: [4, 4, 3, 4, 4],
                         gridTemplateColumns: [`1fr`, `1fr`,`1fr`, `repeat(2, 1fr)`],
                         h2: {gridColumn: `-1/1`, fontFamily: 'Pacifico'},
                     }}
@@ -84,7 +84,9 @@ const Projects = ({offset, factor = 2}: { offset: number; factor?: number }) => 
                         title="А также приглашаем отметить семейные детские праздники и дни рождения"
                         bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
                     >
+ 
                     </ProjectCard>
+
                     <div sx={{
                         position: `relative`
                     }}>

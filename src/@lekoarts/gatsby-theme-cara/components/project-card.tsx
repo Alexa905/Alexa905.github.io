@@ -20,13 +20,13 @@ const ProjectCard = ({link, title, children, bg, imgsrc}: ProjectCardProps) => (
             boxShadow: `lg`,
             position: `relative`,
             opacity: `0.9`,
+            marginBottom:`0`,
             display: `block`,
             textDecoration: `none`,
             borderRadius: `lg`,
-            px: [1, 1, 2, 4],
-            py: [1, 1, 2, 4, 5],
+            px: [2, 2, 3, 3, 4],
+            py: [2, 2, 3, 3, 4],
             color: `white`,
-            position: `relative`,
             background: bg || `none`,
             transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
             "&:hover": {
@@ -37,15 +37,14 @@ const ProjectCard = ({link, title, children, bg, imgsrc}: ProjectCardProps) => (
         }}
     >
 
-
         <div
             sx={{
                 textTransform: `uppercase`,
-                letterSpacing: [0, 0, `wide`],
-                pt: [3, 3, 3, 3, 3, 4],
-                fontSize: [2, 2, 3, 4, 4, 5],
-                fontWeight: [`small`, `small`, `medium`],
-                lineHeight: 1.1,
+                letterSpacing: [0, 0,0, 0, `wide`],
+                pt: [3, 3, 3, 4, 4],
+                fontSize: [2, 2, 3, 3, 4],
+                fontWeight: [`small`, `small`, `small`,`small`, `medium`],
+                lineHeight: [`28px`, `28px`, `28px`, `28px`, 1.1],
             }}
         >
             {title}

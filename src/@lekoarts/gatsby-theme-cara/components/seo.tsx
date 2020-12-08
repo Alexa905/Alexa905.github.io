@@ -33,6 +33,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
   return (
     <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
       <html lang={siteLanguage} />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta property="og:title" content={seo.title} />
