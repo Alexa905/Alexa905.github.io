@@ -44,7 +44,7 @@ const Hero = ({offset, factor = 1}: { offset: number; factor?: number }) => {
         </Divider>
         <Content sx={{variant: `texts.bigger`, textAlign: `center`, h2: {fontFamily: 'Lobster'}}} speed={0}
                  offset={offset} factor={factor}>
-            <Inner sx={{textAlign: `center`, h2: {fontFamily: 'Pacifico', marginBottom:`40px`}, p:{fontSize:[`20px`, `20px`, `24px`], lineHeight:`24px`}, h5:{fontSize:[`16px`, `22px`, `24px`, `24px`, `26px`], fontWeight:`400`}}}>
+            <Inner sx={{textAlign: `center`, h2: {fontFamily: 'Pacifico', marginBottom:`40px`}, p:{fontSize:[`20px`, `20px`, `24px`], lineHeight:`24px`}, h5:{fontSize:[`16px`, `22px`, `24px`, `24px`, `26px`], fontWeight:[`500`]}}}>
 
                 <div sx={{minHeight: [`300px`,`330px`, `600px`, `600px`, `600px`], marginBottom: [`0`, `0`, `0px`]}}>
                     <img sx={{

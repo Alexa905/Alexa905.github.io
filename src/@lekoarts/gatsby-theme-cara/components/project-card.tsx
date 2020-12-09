@@ -41,10 +41,11 @@ const ProjectCard = ({link, title, children, bg, imgsrc}: ProjectCardProps) => (
             sx={{
                 textTransform: `uppercase`,
                 letterSpacing: [0, 0,0, 0, `wide`],
-                pt: [3, 3, 3, 4, 4],
+                pt: [2, 2, 2, 3, 3],
+                pb: [2, 2, 2, 3, 3],
                 fontSize: [2, 2, 3, 3, 4],
                 fontWeight: [`small`, `small`, `small`,`small`, `medium`],
-                lineHeight: [`28px`, `28px`, `28px`, `28px`, 1.1],
+                lineHeight: [`28px`, `28px`, `30px`, `30px`, 1.1],
             }}
         >
             {title}

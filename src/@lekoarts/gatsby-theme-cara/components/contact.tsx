@@ -48,7 +48,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
       </Inner>
       <Footer />
     </Content>
-    <Divider speed={0.1} offset={offset} factor={factor}>
+    <Divider speed={0} offset={offset} factor={factor}>
       <UpDown>
         <SVG icon="balloon" hiddenMobile width={8} color="icon_darkest" left="70%" top="20%" />
         <SVG icon="balloonSmall" width={8} stroke color="icon_darkest" left="25%" top="5%" />

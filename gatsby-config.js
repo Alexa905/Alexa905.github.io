@@ -42,7 +42,7 @@ module.exports = {
 					`pacifico\:400`,// you can also specify font weights and styles
 					`lobster\:400` // you can also specify font weights and styles
 				],
-				display: 'swap'
+				//display: 'swap'
 			}
 		},
 		{
